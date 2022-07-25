@@ -1,0 +1,16 @@
+# Llenado de datos {#llenado}
+
+Llenado de datos
+
+- Ejemplo REMA
+
+  - Solamente una fase
+
+  - Llenar un programa entero
+
+- Ejemplo FIP
+
+  - Solamente una fase
+
+  - Módulo de intervenciones
+

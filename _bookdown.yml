@@ -1,5 +1,7 @@
 book_filename: "bookdown-demo"
 language:
   ui:
-    chapter_name: "Chapter "
+    chapter_name: "Capítulo "
+  label:
+    fig: "Figura "
 delete_merged_file: true

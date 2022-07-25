@@ -1,0 +1,7 @@
+# Compartir el estado de la aplicación {#compartir}
+
+Compartir el estado de la aplicación
+
+<!-- `r if (knitr:::is_html_output()) ' -->
+<!-- # References {-} -->
+<!-- '` -->

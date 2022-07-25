@@ -1,0 +1,6 @@
+# Cargar el estado de un presupuesto anterior {#cargar}
+
+Cargar un archivo anterior
+
+
+

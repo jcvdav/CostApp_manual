@@ -1,0 +1,10 @@
+# Explorar el presupuesto {#explorar}
+
+Explorador de presupuesto
+
+- Descripcion de grafica 1
+
+- Descripcion de grafica 2
+
+- Descripción del módulo de division presupuestal
+
