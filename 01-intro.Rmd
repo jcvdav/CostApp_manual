@@ -34,19 +34,19 @@ knitr::include_graphics("images/Screen Shot 2022-07-25 at 2.43.50 PM.png")
 
 Del lado derecho observarás el área de trabajo principal. Si estás trabajando en el llenado de un presupuesto, esta sección te mostrará los diferentes campos para que puedas ingresar los valores o explorar el presupuesto. Exploremos más a detalle cada una de estas.
 
-La figura \@ref(fig:filling-page) muestra el estado de la aplicación cuando el usuario ha seleccionado "Costeo de Reservas" en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de "Diseño", "Implementación", y "Seguimiento", stas son las tres fases descritas en sección \@ref(estructura). La pestaña "Duración" está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada "Duración de la fase" en la que especificaremos la duración del a fase de diseño de las reservas marinas. La pestaña de diseño de FIPS es similar.
+La figura \@ref(fig:filling-page) muestra el estado de la aplicación cuando el usuario ha seleccionado "Costeo de Reservas" en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de "Diseño", "Implementación", y "Seguimiento", stas son las tres fases descritas en sección \@ref(estructura). La pestaña "Implementación" está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada "Duración de la fase" en la que especificaremos la duración del a fase de diseño de las reservas marinas.
 
 ```{r filling-page, echo = FALSE, fig.cap = "Página de llenado de datos en la aplicación web."}
-knitr::include_graphics("images/Screen Shot 2022-07-25 at 2.56.05 PM.png")
+knitr::include_graphics("images/jerarquia.png")
 ```
 
-La fase de diseño de reservas marinas se subdivide en cuatro subfases, indicadas por los bloques azules del lado izquierdo. En este caso, el diseño de una reserva marina requiere de Socialización, Definicion de Objetivos, Elaboración de un Estudio Técnico Justificativo, y "Otros" (otros costos que el usuario puede incluir). Como dijimos en la sección \@ref(estructura), las subfases se dividen en actividades. Por ejemplo, la subfase de socialización cuenta con una única actividad: "Reuniones para presentar información de ZRP". Al hacer "click" en el signo de **+** a la derecha del título de la actividad, la aplicación despliega la lista de elementos a costear (Fig. \@ref(fig:elements)), así como la frecuencia de la actividad.
+La fase de diseño de reservas marinas se subdivide en cuatro subfases, indicadas por los bloques azules del lado izquierdo. En este caso, el diseño de una reserva marina requiere de Socialización, Definicion de Objetivos, Elaboración de un Estudio Técnico Justificativo, y "Otros" (otros costos que el usuario puede incluir). Como dijimos en la sección \@ref(estructura), las subfases se dividen en actividades. Por ejemplo, la subfase de socialización cuenta con una única actividad: "Reuniones para presentar información de ZRP". Al hacer "click" en el signo de **+** a la derecha del título de la actividad, la aplicación despliega la lista de elementos a costear (Fig. \@ref(fig:elements)), así como la frecuencia de la actividad. Aprenderemos más sobre el llenado de un presupuesto en el capítylo \@ref(llenado).
 
 ```{r elements, echo = FALSE, fig.cap = "Elementos para la actividad de 'Reuniones para presentar información de ZRP'."}
 knitr::include_graphics("images/Screen Shot 2022-07-25 at 3.08.10 PM.png")
 ```
 
-La figura \@ref(fig:viewing-page) muestra el último área de trabajo, donde podrás visualizar el presupuesto. Además, contiene una nueva característica de esta versión de la aplicación: Te permite dividir el presupuesto entre diferentes actores, y anticipar el monto de sus contribuciones.
+La figura \@ref(fig:viewing-page) muestra el último área de trabajo, donde podrás visualizar el presupuesto. Además, contiene una nueva característica de esta versión de la aplicación: Te permite dividir el presupuesto entre diferentes actores, y anticipar el monto de sus contribuciones. Aprenderemos más a detalle sobre esta sección en el capítulo \@ref(explorar).
 
 ```{r viewing-page, echo = FALSE, fig.cap = "Página de exploración de presupuesto en la aplicación web."}
 knitr::include_graphics("images/Screen Shot 2022-07-25 at 2.56.18 PM.png")

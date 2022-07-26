@@ -1,10 +1,33 @@
 # Explorar el presupuesto {#explorar}
 
-Explorador de presupuesto
+En el capítulo anterior vimos cómo llenar los datos. Aquí cubriremos cómo explorar las visualizaciones dentro de la app. Supongamos que ya llenamos toda la información necesaria , como lo hicimos en los ejemplos de REMA y FUP (Secciones \@ref(rema) y \@ref(fip)). Por lo tanto, la palicación se ve como la Figura \@ref(fig:exp-1).
 
-- Descripcion de grafica 1
+**Paso 1 - ** Llena los datos como lo hicimos en el capítulo anterior (Fig \@ref(fig:exp-1)).
 
-- Descripcion de grafica 2
+```{r exp-1, echo = F, fig.cap = "Llena el formato."}
+knitr::include_graphics("images/exp-1.png")
+```
 
-- Descripción del módulo de division presupuestal
+**Paso 2 - ** Para explorar el presupuesto, haz click en la sección "Gráficos" en el panel lateral (Fig \@ref(fig:exp-2)). Esto te llevará al área de trabajo de exploración. El primer panel te permite conrolar el tamaño del texto en las gráficas y cambiar el esquema de colores. El segundo te permite ver el presupuesto por fases. En este caso solamente tenemos datos para la fase de implementación, pero un presupuesto completo tendría 3 columnas (diseño, implementación y seguimiento). Los colores corresponden a los diferentes conceptos. Un "concepto" responde a la pregunta: ¿En qué estamos gatando el dinero?
 
+```{r exp-2, echo = F, fig.cap = "Navega a la sección de gráficos."}
+knitr::include_graphics("images/exp-2.png")
+```
+
+**Paso 3 - ** Explora las gráficas con tu cursor. Al nevegar sobre los diferentes colores, puedes ver venanas con información (Fig \@ref(fig:exp-3)). Por ejemplo, podemos ver que más de la mitad del presupuesto está destinado al concepto de "Viajes y salidas a campo".
+
+```{r exp-3, echo = F, fig.cap = "Explora los costos for fase."}
+knitr::include_graphics("images/exp-3.png")
+```
+
+**Paso 4 - ** La segunda figura te muestra el resupuesto por conceptos (en el eje vertical) y el color está dado por las fases. La tercer figura te permite asignar diferentes contribuciones a los diferentes actores (Fig \@ref(fig:exp-4)).
+
+```{r exp-4, echo = F, fig.cap = "Otras gráficas."}
+knitr::include_graphics("images/exp-4.png")
+```
+
+**Paso 5 - ** Modifica la división del presupuesto con 3 actores, y asigna nombres y porcentajes de conribución a cada uno (Fig \@ref(fig:exp-5)).
+
+```{r exp-5, echo = F, fig.cap = "Asignar presupuesto a actores."}
+knitr::include_graphics("images/exp-5.png")
+```

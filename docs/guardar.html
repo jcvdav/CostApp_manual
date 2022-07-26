@@ -94,7 +94,11 @@
 <li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#área-de-trabajo"><i class="fa fa-check"></i><b>2.2.2</b> Área de trabajo</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="llenado.html"><a href="llenado.html"><i class="fa fa-check"></i><b>3</b> Llenado de datos</a></li>
+<li class="chapter" data-level="3" data-path="llenado.html"><a href="llenado.html"><i class="fa fa-check"></i><b>3</b> Llenado de datos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="llenado.html"><a href="llenado.html#rema"><i class="fa fa-check"></i><b>3.1</b> Ejemplo de REMA</a></li>
+<li class="chapter" data-level="3.2" data-path="llenado.html"><a href="llenado.html#fip"><i class="fa fa-check"></i><b>3.2</b> Ejemplo de FIP</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>4</b> Explorar el presupuesto</a></li>
 <li class="chapter" data-level="5" data-path="guardar.html"><a href="guardar.html"><i class="fa fa-check"></i><b>5</b> Guardar el progreso de un presupuesto</a></li>
 <li class="chapter" data-level="6" data-path="cargar.html"><a href="cargar.html"><i class="fa fa-check"></i><b>6</b> Cargar el estado de un presupuesto anterior</a></li>
@@ -185,6 +189,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

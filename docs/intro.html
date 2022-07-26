@@ -94,7 +94,11 @@
 <li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#área-de-trabajo"><i class="fa fa-check"></i><b>2.2.2</b> Área de trabajo</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="llenado.html"><a href="llenado.html"><i class="fa fa-check"></i><b>3</b> Llenado de datos</a></li>
+<li class="chapter" data-level="3" data-path="llenado.html"><a href="llenado.html"><i class="fa fa-check"></i><b>3</b> Llenado de datos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="llenado.html"><a href="llenado.html#rema"><i class="fa fa-check"></i><b>3.1</b> Ejemplo de REMA</a></li>
+<li class="chapter" data-level="3.2" data-path="llenado.html"><a href="llenado.html#fip"><i class="fa fa-check"></i><b>3.2</b> Ejemplo de FIP</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>4</b> Explorar el presupuesto</a></li>
 <li class="chapter" data-level="5" data-path="guardar.html"><a href="guardar.html"><i class="fa fa-check"></i><b>5</b> Guardar el progreso de un presupuesto</a></li>
 <li class="chapter" data-level="6" data-path="cargar.html"><a href="cargar.html"><i class="fa fa-check"></i><b>6</b> Cargar el estado de un presupuesto anterior</a></li>
@@ -151,21 +155,21 @@ Figura 2.1: Página de bienvenida en la aplicación web.
 <div id="área-de-trabajo" class="section level3 hasAnchor" number="2.2.2">
 <h3><span class="header-section-number">2.2.2</span> Área de trabajo<a href="intro.html#área-de-trabajo" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p>Del lado derecho observarás el área de trabajo principal. Si estás trabajando en el llenado de un presupuesto, esta sección te mostrará los diferentes campos para que puedas ingresar los valores o explorar el presupuesto. Exploremos más a detalle cada una de estas.</p>
-<p>La figura <a href="intro.html#fig:filling-page">2.2</a> muestra el estado de la aplicación cuando el usuario ha seleccionado “Costeo de Reservas” en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de “Diseño”, “Implementación”, y “Seguimiento”, stas son las tres fases descritas en sección <a href="intro.html#estructura">2.1</a>. La pestaña “Duración” está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada “Duración de la fase” en la que especificaremos la duración del a fase de diseño de las reservas marinas. La pestaña de diseño de FIPS es similar.</p>
+<p>La figura <a href="intro.html#fig:filling-page">2.2</a> muestra el estado de la aplicación cuando el usuario ha seleccionado “Costeo de Reservas” en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de “Diseño”, “Implementación”, y “Seguimiento”, stas son las tres fases descritas en sección <a href="intro.html#estructura">2.1</a>. La pestaña “Implementación” está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada “Duración de la fase” en la que especificaremos la duración del a fase de diseño de las reservas marinas.</p>
 <div class="figure"><span style="display:block;" id="fig:filling-page"></span>
-<img src="images/Screen%20Shot%202022-07-25%20at%202.56.05%20PM.png" alt="Página de llenado de datos en la aplicación web."  />
+<img src="images/jerarquia.png" alt="Página de llenado de datos en la aplicación web."  />
 <p class="caption">
 Figura 2.2: Página de llenado de datos en la aplicación web.
 </p>
 </div>
-<p>La fase de diseño de reservas marinas se subdivide en cuatro subfases, indicadas por los bloques azules del lado izquierdo. En este caso, el diseño de una reserva marina requiere de Socialización, Definicion de Objetivos, Elaboración de un Estudio Técnico Justificativo, y “Otros” (otros costos que el usuario puede incluir). Como dijimos en la sección <a href="intro.html#estructura">2.1</a>, las subfases se dividen en actividades. Por ejemplo, la subfase de socialización cuenta con una única actividad: “Reuniones para presentar información de ZRP”. Al hacer “click” en el signo de <strong>+</strong> a la derecha del título de la actividad, la aplicación despliega la lista de elementos a costear (Fig. <a href="intro.html#fig:elements">2.3</a>), así como la frecuencia de la actividad.</p>
+<p>La fase de diseño de reservas marinas se subdivide en cuatro subfases, indicadas por los bloques azules del lado izquierdo. En este caso, el diseño de una reserva marina requiere de Socialización, Definicion de Objetivos, Elaboración de un Estudio Técnico Justificativo, y “Otros” (otros costos que el usuario puede incluir). Como dijimos en la sección <a href="intro.html#estructura">2.1</a>, las subfases se dividen en actividades. Por ejemplo, la subfase de socialización cuenta con una única actividad: “Reuniones para presentar información de ZRP”. Al hacer “click” en el signo de <strong>+</strong> a la derecha del título de la actividad, la aplicación despliega la lista de elementos a costear (Fig. <a href="intro.html#fig:elements">2.3</a>), así como la frecuencia de la actividad. Aprenderemos más sobre el llenado de un presupuesto en el capítylo <a href="llenado.html#llenado">3</a>.</p>
 <div class="figure"><span style="display:block;" id="fig:elements"></span>
 <img src="images/Screen%20Shot%202022-07-25%20at%203.08.10%20PM.png" alt="Elementos para la actividad de 'Reuniones para presentar información de ZRP'."  />
 <p class="caption">
 Figura 2.3: Elementos para la actividad de ‘Reuniones para presentar información de ZRP’.
 </p>
 </div>
-<p>La figura <a href="intro.html#fig:viewing-page">2.4</a> muestra el último área de trabajo, donde podrás visualizar el presupuesto. Además, contiene una nueva característica de esta versión de la aplicación: Te permite dividir el presupuesto entre diferentes actores, y anticipar el monto de sus contribuciones.</p>
+<p>La figura <a href="intro.html#fig:viewing-page">2.4</a> muestra el último área de trabajo, donde podrás visualizar el presupuesto. Además, contiene una nueva característica de esta versión de la aplicación: Te permite dividir el presupuesto entre diferentes actores, y anticipar el monto de sus contribuciones. Aprenderemos más a detalle sobre esta sección en el capítulo <a href="explorar.html#explorar">4</a>.</p>
 <div class="figure"><span style="display:block;" id="fig:viewing-page"></span>
 <img src="images/Screen%20Shot%202022-07-25%20at%202.56.18%20PM.png" alt="Página de exploración de presupuesto en la aplicación web."  />
 <p class="caption">
@@ -236,6 +240,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>

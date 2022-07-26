@@ -94,7 +94,11 @@
 <li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#área-de-trabajo"><i class="fa fa-check"></i><b>2.2.2</b> Área de trabajo</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="llenado.html"><a href="llenado.html"><i class="fa fa-check"></i><b>3</b> Llenado de datos</a></li>
+<li class="chapter" data-level="3" data-path="llenado.html"><a href="llenado.html"><i class="fa fa-check"></i><b>3</b> Llenado de datos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="llenado.html"><a href="llenado.html#rema"><i class="fa fa-check"></i><b>3.1</b> Ejemplo de REMA</a></li>
+<li class="chapter" data-level="3.2" data-path="llenado.html"><a href="llenado.html#fip"><i class="fa fa-check"></i><b>3.2</b> Ejemplo de FIP</a></li>
+</ul></li>
 <li class="chapter" data-level="4" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>4</b> Explorar el presupuesto</a></li>
 <li class="chapter" data-level="5" data-path="guardar.html"><a href="guardar.html"><i class="fa fa-check"></i><b>5</b> Guardar el progreso de un presupuesto</a></li>
 <li class="chapter" data-level="6" data-path="cargar.html"><a href="cargar.html"><i class="fa fa-check"></i><b>6</b> Cargar el estado de un presupuesto anterior</a></li>
@@ -122,12 +126,42 @@
             <section class="normal" id="section-">
 <div id="explorar" class="section level1 hasAnchor" number="4">
 <h1><span class="header-section-number">Capítulo 4</span> Explorar el presupuesto<a href="explorar.html#explorar" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>Explorador de presupuesto</p>
-<ul>
-<li><p>Descripcion de grafica 1</p></li>
-<li><p>Descripcion de grafica 2</p></li>
-<li><p>Descripción del módulo de division presupuestal</p></li>
-</ul>
+<p>En el capítulo anterior vimos cómo llenar los datos. Aquí cubriremos cómo explorar las visualizaciones dentro de la app. Supongamos que ya llenamos toda la información necesaria , como lo hicimos en los ejemplos de REMA y FUP (Secciones <a href="llenado.html#rema">3.1</a> y <a href="llenado.html#fip">3.2</a>). Por lo tanto, la palicación se ve como la Figura <a href="explorar.html#fig:exp-1">4.1</a>.</p>
+<p><strong>Paso 1 - </strong> Llena los datos como lo hicimos en el capítulo anterior (Fig <a href="explorar.html#fig:exp-1">4.1</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:exp-1"></span>
+<img src="images/exp-1.png" alt="Llena el formato."  />
+<p class="caption">
+Figura 4.1: Llena el formato.
+</p>
+</div>
+<p><strong>Paso 2 - </strong> Para explorar el presupuesto, haz click en la sección “Gráficos” en el panel lateral (Fig <a href="explorar.html#fig:exp-2">4.2</a>). Esto te llevará al área de trabajo de exploración. El primer panel te permite conrolar el tamaño del texto en las gráficas y cambiar el esquema de colores. El segundo te permite ver el presupuesto por fases. En este caso solamente tenemos datos para la fase de implementación, pero un presupuesto completo tendría 3 columnas (diseño, implementación y seguimiento). Los colores corresponden a los diferentes conceptos. Un “concepto” responde a la pregunta: ¿En qué estamos gatando el dinero?</p>
+<div class="figure"><span style="display:block;" id="fig:exp-2"></span>
+<img src="images/exp-2.png" alt="Navega a la sección de gráficos."  />
+<p class="caption">
+Figura 4.2: Navega a la sección de gráficos.
+</p>
+</div>
+<p><strong>Paso 3 - </strong> Explora las gráficas con tu cursor. Al nevegar sobre los diferentes colores, puedes ver venanas con información (Fig <a href="explorar.html#fig:exp-3">4.3</a>). Por ejemplo, podemos ver que más de la mitad del presupuesto está destinado al concepto de “Viajes y salidas a campo”.</p>
+<div class="figure"><span style="display:block;" id="fig:exp-3"></span>
+<img src="images/exp-3.png" alt="Explora los costos for fase."  />
+<p class="caption">
+Figura 4.3: Explora los costos for fase.
+</p>
+</div>
+<p><strong>Paso 4 - </strong> La segunda figura te muestra el resupuesto por conceptos (en el eje vertical) y el color está dado por las fases. La tercer figura te permite asignar diferentes contribuciones a los diferentes actores (Fig <a href="explorar.html#fig:exp-4">4.4</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:exp-4"></span>
+<img src="images/exp-4.png" alt="Otras gráficas."  />
+<p class="caption">
+Figura 4.4: Otras gráficas.
+</p>
+</div>
+<p><strong>Paso 5 - </strong> Modifica la división del presupuesto con 3 actores, y asigna nombres y porcentajes de conribución a cada uno (Fig <a href="explorar.html#fig:exp-5">4.5</a>).</p>
+<div class="figure"><span style="display:block;" id="fig:exp-5"></span>
+<img src="images/exp-5.png" alt="Asignar presupuesto a actores."  />
+<p class="caption">
+Figura 4.5: Asignar presupuesto a actores.
+</p>
+</div>
 
 </div>
             </section>
@@ -190,6 +224,20 @@ gitbook.start({
 });
 </script>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 </body>
 
 </html>
