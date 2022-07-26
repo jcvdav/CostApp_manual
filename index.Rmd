@@ -1,8 +1,8 @@
 --- 
-title: "Aplicación para el costeo presupuestal de intervenciones de conservación marina"
+title: "Aplicación para el costeo de intervenciones de conservación marina"
 subtitle: "Manual de usuario"
 author: "Juan Carlos Villaseñor-Derbez"
-date: "`r Sys.Date()`"
+date: "Última actualzación: Julio 24, 2022"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -17,7 +17,7 @@ description: "Este es un manual de usuario para la aplicación de costeo de inte
 
 ## Sobre la aplicación
 
-La aplicación de costeo de intervenciones de conservación marina te permite diseñar y costear una intervención. La intervención puede ser en forma de reservas marinas o proyectos de mejoramiento pesquero. La aplicación está disponible en [este link][https://innovacionazul.shinyapps.io/AppCosteo/].
+La aplicación de costeo de intervenciones de conservación marina te permite diseñar y costear una intervención. La intervención puede ser en forma de reservas marinas o proyectos de mejoramiento pesquero. La aplicación está disponible en [este link](https://innovacionazul.shinyapps.io/AppCosteo/).
 
 ## Sobre el manual
 

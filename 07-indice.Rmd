@@ -1,5 +1,5 @@
 `r if (knitr:::is_html_output()) '
-# Índice de elementos
+# Índice de elementos {#indice}
 '`
 
 ```{r, echo = F}
