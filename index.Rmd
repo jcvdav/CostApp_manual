@@ -2,7 +2,7 @@
 title: "Aplicación para el costeo de intervenciones de conservación marina"
 subtitle: "Manual de usuario"
 author: "Juan Carlos Villaseñor-Derbez"
-date: "Última actualzación: Julio 24, 2022"
+date: "Última actualzación: Julio 25, 2022"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
