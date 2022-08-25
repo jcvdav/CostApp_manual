@@ -33,14 +33,6 @@
   \KOMAoptions{parskip=half}}
 \makeatother
 \usepackage{xcolor}
-\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
-\hypersetup{
-  pdftitle={Aplicación para el costeo de intervenciones de conservación marina},
-  pdfauthor={Juan Carlos Villaseñor-Derbez},
-  hidelinks,
-  pdfcreator={LaTeX via pandoc}}
-\urlstyle{same} % disable monospaced font for URLs
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -82,6 +74,14 @@
 \fi
 \usepackage[]{natbib}
 \bibliographystyle{apalike}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Aplicación para el costeo de intervenciones de conservación marina},
+  pdfauthor={Juan Carlos Villaseñor-Derbez},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
 
 \title{Aplicación para el costeo de intervenciones de conservación marina}
 \usepackage{etoolbox}
@@ -155,9 +155,7 @@ Por lo tanto, las secciones se dividen en fases. Las fases se dividen en subfase
 La interfaz de usuario está diseñada para reflejar las estructura del presupuesto. Al entrar a la aplicación, lo primero que verás es una pantalla (Fig. \ref{fig:landing-page}). El lado izquierdo muestra el panel de control y navgación. El panel te permite navegar a través de las diferentes secciones de la aplicación. La sección predeterminada es la sección de ``Inicio'', donde se encuentra un pequeño resumen de la aplicación, así como enlances a este manual. También están disponibles las dos secciones que identifican el tipo de intervención (``Costeo de Reservas'' y ``Costeo de FIP''), y la sección para visualizar el presupuesto (``Gráficos''). Finalmente, observarás la zona de herramientas disponibles, como cargar un presupuesto anterior, descargar el presupuesto de la sesión, o compartir el estado de tu sesión con alguien más.
 
 \begin{figure}
-\centering
-\includegraphics{images/Screen Shot 2022-07-25 at 2.43.50 PM.png}
-\caption{\label{fig:landing-page}Página de bienvenida en la aplicación web.}
+\includegraphics[width=49.67in]{images/Screen Shot 2022-07-25 at 2.43.50 PM} \caption{Página de bienvenida en la aplicación web.}\label{fig:landing-page}
 \end{figure}
 
 \hypertarget{uxe1rea-de-trabajo}{%
@@ -168,25 +166,19 @@ Del lado derecho observarás el área de trabajo principal. Si estás trabajando
 La figura \ref{fig:filling-page} muestra el estado de la aplicación cuando el usuario ha seleccionado ``Costeo de Reservas'' en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de ``Diseño'', ``Implementación'', y ``Seguimiento'', stas son las tres fases descritas en sección \ref{estructura}. La pestaña ``Implementación'' está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada ``Duración de la fase'' en la que especificaremos la duración del a fase de diseño de las reservas marinas.
 
 \begin{figure}
-\centering
-\includegraphics{images/jerarquia.png}
-\caption{\label{fig:filling-page}Página de llenado de datos en la aplicación web.}
+\includegraphics[width=61.24in]{images/jerarquia} \caption{Página de llenado de datos en la aplicación web.}\label{fig:filling-page}
 \end{figure}
 
 La fase de diseño de reservas marinas se subdivide en cuatro subfases, indicadas por los bloques azules del lado izquierdo. En este caso, el diseño de una reserva marina requiere de Socialización, Definicion de Objetivos, Elaboración de un Estudio Técnico Justificativo, y ``Otros'' (otros costos que el usuario puede incluir). Como dijimos en la sección \ref{estructura}, las subfases se dividen en actividades. Por ejemplo, la subfase de socialización cuenta con una única actividad: ``Reuniones para presentar información de ZRP''. Al hacer ``click'' en el signo de \textbf{+} a la derecha del título de la actividad, la aplicación despliega la lista de elementos a costear (Fig. \ref{fig:elements}), así como la frecuencia de la actividad. Aprenderemos más sobre el llenado de un presupuesto en el capítylo \ref{llenado}.
 
 \begin{figure}
-\centering
-\includegraphics{images/Screen Shot 2022-07-25 at 3.08.10 PM.png}
-\caption{\label{fig:elements}Elementos para la actividad de `Reuniones para presentar información de ZRP'.}
+\includegraphics[width=49.67in]{images/Screen Shot 2022-07-25 at 3.08.10 PM} \caption{Elementos para la actividad de 'Reuniones para presentar información de ZRP'.}\label{fig:elements}
 \end{figure}
 
 La figura \ref{fig:viewing-page} muestra el último área de trabajo, donde podrás visualizar el presupuesto. Además, contiene una nueva característica de esta versión de la aplicación: Te permite dividir el presupuesto entre diferentes actores, y anticipar el monto de sus contribuciones. Aprenderemos más a detalle sobre esta sección en el capítulo \ref{explorar}.
 
 \begin{figure}
-\centering
-\includegraphics{images/Screen Shot 2022-07-25 at 2.56.18 PM.png}
-\caption{\label{fig:viewing-page}Página de exploración de presupuesto en la aplicación web.}
+\includegraphics[width=49.67in]{images/Screen Shot 2022-07-25 at 2.56.18 PM} \caption{Página de exploración de presupuesto en la aplicación web.}\label{fig:viewing-page}
 \end{figure}
 
 \hypertarget{llenado}{%
@@ -200,49 +192,43 @@ En este capítulo exploramos la interfaz para el llenado de datos. Recuerda que 
 \textbf{Paso 1 - } Selecciona la pestaña de ``Costeo de Reservas'' (Fig. \ref{fig:rem-dis-1}). Auomáticamente, la app te muestra la fase de diseño (primer pestaña del área de trabajo).
 
 \begin{figure}
-\centering
-\includegraphics{images/rema_dis_1.png}
-\caption{\label{fig:rem-dis-1}Interfaz de usuario con la sección de Costeo de Reservas seleccionada}
+\includegraphics[width=61.11in]{images/rema_dis_1} \caption{Interfaz de usuario con la sección de Costeo de Reservas seleccionada}\label{fig:rem-dis-1}
 \end{figure}
 
 \textbf{Paso 2 - } Actualiza la duración de la fase de diseño a 2 años en el recuadro azul sobre las cuatro subfases (Fig \ref{fig:rem-dis-2}).
 
 \begin{figure}
-\centering
-\includegraphics{images/rema_dis_2.png}
-\caption{\label{fig:rem-dis-2}Modificación de la duración de fase.}
+\includegraphics[width=61.11in]{images/rema_dis_2} \caption{Modificación de la duración de fase.}\label{fig:rem-dis-2}
 \end{figure}
 
 \textbf{Paso - 3 } Para llenar la subfase de Socialización, haz click en el simbolo de \textbf{+} en la esquina superior derecha cada actividad. Esto te mostrará todos los elementos que corresponden a esta actividad (Fig \ref{fig:rem-dis-3}).
 
 \begin{figure}
-\centering
-\includegraphics{images/rema_dis_3.png}
-\caption{\label{fig:rem-dis-3}Despliegue de una actividad.}
+\includegraphics[width=61.11in]{images/rema_dis_3} \caption{Despliegue de una actividad.}\label{fig:rem-dis-3}
 \end{figure}
 
 \textbf{Paso 4 - } Selecciona la frecuencia de las reuniones. En este caso la frecuencia es semestral, pes habrá dos reuniones al año a lo largo de dos años de diseño (Fig \ref{fig:rem-dis-4}).
 
 \begin{figure}
-\centering
-\includegraphics{images/rema_dis_4.png}
-\caption{\label{fig:rem-dis-4}Frecuencia de la actividad.}
+\includegraphics[width=61.11in]{images/rema_dis_4} \caption{Frecuencia de la actividad.}\label{fig:rem-dis-4}
 \end{figure}
 
 \textbf{Paso 5 - } Ingresa los costos y cantidades de cada elemento. En este ejemplo la reunión semestral requiere de \textbf{una} sala de juntas que \textbf{cuesta \$1,500} (Fig \ref{fig:rema-dis-5}). En el panel izquierdo podrás ver las actualizaciones a costos en tiempo real. En este caso, el costo hasta el momento es de \$6,000 pesos, pues 1 sala de juntas de 1,500 que se usa 2 veces al año durante 2 años = \(1500 \times 1 \times 2 \times 2 = 6,000\).
 
 \begin{figure}
-\centering
-\includegraphics{images/rema_dis_5.png}
-\caption{\label{fig:rem-dis-5}Llenado de datos y actualización del presupuesto.}
+\includegraphics[width=61.11in]{images/rema_dis_5} \caption{Llenado de datos y actualización del presupuesto.}\label{fig:rem-dis-5}
 \end{figure}
 
 \textbf{Paso 6 - } Continua llenando los datos de la actividad, incluyendo los costos y cantidades de todos los elementos relevantes (Fig \ref{fig:rem-dis-6}). En este caso, necesitaremos \$200 en materiales de papelería y 2 moderadores que cobrarán \$3,000 por reunión cada uno. También incluimos los insumos de coffee break, estimados en \$500 por reunión.
 
-\includegraphics{images/rema_dis_6.png}
+\begin{figure}
+\includegraphics[width=61.11in]{images/rema_dis_6} \caption{Termina de llenar la activiad}\label{fig:rem-dis-6}
+\end{figure}
+
 \textbf{Paso 7 - } Una vez hayas terminado con la actividad, ha click en el signo \textbf{-} para colapsar el formato de entrada y repite los pasos 3 - 6 para llenar las siguientes actividades (Fig \ref{fig:rem-dis-7}). Observa cómo la actividad de reuniones está colapsada, mientras que la actividad de reunión para definir objetivos ahora está disponible.
 
-\includegraphics{images/rema_dis_7.png}
+\begin{figure}
+\includegraphics[width=61.11in]{images/rema_dis_7} \end{figure}
 
 Esto concluye la breve introducción para el llenado de un presupuesto para REMA. En un ejercicio real, probablemente necesites iterar más entre fases, subfases y actividades. En cualquier momento puedes navegar a otras secciones, por ejemplo para explorar y visualizar el presupuesto, descrito a detalle en el capítulo \ref{explorar}.
 
@@ -254,57 +240,43 @@ Supongamos que ya haz cubierto la fase de diseño para un FIP. El siguiente pso 
 \textbf{Paso 1 - } Selecciona la sección de ``Costeo de FIP'' en la barra lateral (Fig \ref{fig:fip-imp-1}).
 
 \begin{figure}
-\centering
-\includegraphics{images/fip-imp-1.png}
-\caption{\label{fig:fip-imp-1}Selecciona la sección.}
+\includegraphics[width=61.24in]{images/fip-imp-1} \caption{Selecciona la sección.}\label{fig:fip-imp-1}
 \end{figure}
 
 \textbf{Paso 2 - } En el área de trabajo de FIP, selecciona la pestaña de ``Implementación'' en la parte superior de la pantalla. (Fig \ref{fig:fip-imp-2}).
 
 \begin{figure}
-\centering
-\includegraphics{images/fip-imp-2.png}
-\caption{\label{fig:fip-imp-2}Selecciona la fase}
+\includegraphics[width=61.11in]{images/fip-imp-2} \caption{Selecciona la fase}\label{fig:fip-imp-2}
 \end{figure}
 
 \textbf{Paso 2 - } Ingresa la duración de la fase, en este caso de 2 años (Fig \ref{fig:fip-imp-3}).
 
 \begin{figure}
-\centering
-\includegraphics{images/fip-imp-3.png}
-\caption{\label{fig:fip-imp-3}Selecciona la duración de la fase.}
+\includegraphics[width=61.11in]{images/fip-imp-3} \caption{Selecciona la duración de la fase.}\label{fig:fip-imp-3}
 \end{figure}
 
 \textbf{Paso 4 - } Un FIP puede tener diferentes intervenciones. Usa el menú desplegable del lado derecho para seleccionar las intervenciones que corresponden a tu programa (Fig \ref{fig:fip-imp-4}).
 
 \begin{figure}
-\centering
-\includegraphics{images/fip-imp-4.png}
-\caption{\label{fig:fip-imp-4}Selecciona tus acciones.}
+\includegraphics[width=61.11in]{images/fip-imp-4} \caption{Selecciona tus acciones.}\label{fig:fip-imp-4}
 \end{figure}
 
 \textbf{Paso 5 - } Al seleccionar las acciones de intervención, el área de trabajo automáticamente generará una subfase para cada una, con las actividades correspondientes (Fig \ref{fig:fip-imp-5}).
 
 \begin{figure}
-\centering
-\includegraphics{images/fip-imp-5.png}
-\caption{\label{fig:fip-imp-5}Generación de subfases y actividades.}
+\includegraphics[width=61.11in]{images/fip-imp-5} \caption{Generación de subfases y actividades.}\label{fig:fip-imp-5}
 \end{figure}
 
 \textbf{Paso 6 - } Al igual que en el caso de REMA, utiliza el botón de \textbf{+} para desplegar los elementos de la actividad y actualiza la frecuencia de la actividad (Fig \ref{fig:fip-imp-6}). En este caso es un evento único, por lo que no importa la duración de la fase, este evento no se repetirá en el tiempo.
 
 \begin{figure}
-\centering
-\includegraphics{images/fip-imp-6.png}
-\caption{\label{fig:fip-imp-6}Selecciona la frecuencia.}
+\includegraphics[width=61.11in]{images/fip-imp-6} \caption{Selecciona la frecuencia.}\label{fig:fip-imp-6}
 \end{figure}
 
 \textbf{Paso 7 - } Llena los costos y cantidades de cada uno de los elementos de la actividad y observa cómo el panel izquierdo se actualiza para reflejar el costo total (Fig \ref{fig:fip-imp-7}).
 
 \begin{figure}
-\centering
-\includegraphics{images/fip-imp-7.png}
-\caption{\label{fig:fip-imp-7}Llenado de datos.}
+\includegraphics[width=61.24in]{images/fip-imp-7} \caption{Llenado de datos.}\label{fig:fip-imp-7}
 \end{figure}
 
 \hypertarget{explorar}{%
@@ -315,41 +287,31 @@ En el capítulo anterior vimos cómo llenar los datos. Aquí cubriremos cómo ex
 \textbf{Paso 1 - } Llena los datos como lo hicimos en el capítulo anterior (Fig \ref{fig:exp-1}).
 
 \begin{figure}
-\centering
-\includegraphics{images/exp-1.png}
-\caption{\label{fig:exp-1}Llena el formato.}
+\includegraphics[width=26.67in]{images/exp-1} \caption{Llena el formato.}\label{fig:exp-1}
 \end{figure}
 
 \textbf{Paso 2 - } Para explorar el presupuesto, haz click en la sección ``Gráficos'' en el panel lateral (Fig \ref{fig:exp-2}). Esto te llevará al área de trabajo de exploración. El primer panel te permite conrolar el tamaño del texto en las gráficas y cambiar el esquema de colores. El segundo te permite ver el presupuesto por fases. En este caso solamente tenemos datos para la fase de implementación, pero un presupuesto completo tendría 3 columnas (diseño, implementación y seguimiento). Los colores corresponden a los diferentes conceptos. Un ``concepto'' responde a la pregunta: ¿En qué estamos gatando el dinero?
 
 \begin{figure}
-\centering
-\includegraphics{images/exp-2.png}
-\caption{\label{fig:exp-2}Navega a la sección de gráficos.}
+\includegraphics[width=61.24in]{images/exp-2} \caption{Navega a la sección de gráficos.}\label{fig:exp-2}
 \end{figure}
 
 \textbf{Paso 3 - } Explora las gráficas con tu cursor. Al nevegar sobre los diferentes colores, puedes ver venanas con información (Fig \ref{fig:exp-3}). Por ejemplo, podemos ver que más de la mitad del presupuesto está destinado al concepto de ``Viajes y salidas a campo''.
 
 \begin{figure}
-\centering
-\includegraphics{images/exp-3.png}
-\caption{\label{fig:exp-3}Explora los costos for fase.}
+\includegraphics[width=61.11in]{images/exp-3} \caption{Explora los costos for fase.}\label{fig:exp-3}
 \end{figure}
 
 \textbf{Paso 4 - } La segunda figura te muestra el resupuesto por conceptos (en el eje vertical) y el color está dado por las fases. La tercer figura te permite asignar diferentes contribuciones a los diferentes actores (Fig \ref{fig:exp-4}).
 
 \begin{figure}
-\centering
-\includegraphics{images/exp-4.png}
-\caption{\label{fig:exp-4}Otras gráficas.}
+\includegraphics[width=26.67in]{images/exp-4} \caption{Otras gráficas.}\label{fig:exp-4}
 \end{figure}
 
 \textbf{Paso 5 - } Modifica la división del presupuesto con 3 actores, y asigna nombres y porcentajes de conribución a cada uno (Fig \ref{fig:exp-5}).
 
 \begin{figure}
-\centering
-\includegraphics{images/exp-5.png}
-\caption{\label{fig:exp-5}Asignar presupuesto a actores.}
+\includegraphics[width=61.11in]{images/exp-5} \caption{Asignar presupuesto a actores.}\label{fig:exp-5}
 \end{figure}
 
 \hypertarget{guardar}{%
@@ -360,17 +322,13 @@ Una vez que llenaste y exploraste el presupuesto, puedes descargar una hoja de E
 Para descargar el presupuesto, simplemente haz click en el botón de ``Descargar presupuesto'' en el planel lateral izquierdo (Fig \ref{fig:down-1}).
 
 \begin{figure}
-\centering
-\includegraphics{images/down-1.png}
-\caption{\label{fig:down-1}Botón para descargar.}
+\includegraphics[width=61.24in]{images/down-1} \caption{Botón para descargar.}\label{fig:down-1}
 \end{figure}
 
 Dependiendo de las opciones de tu explorador, el archivo se va a descargar a tu folder de descargas, o un explorador se abrirá para permitirte elegir un lugar para descargar los datos y asignar un nombre al archivo (Fig \ref{fig:down-2}). \textbf{NOTA IMPRTANTE: Si planeas re-utilizar este presupuesto para continuar modificaciones, es importante NO modificar manualmente los contenidos.}
 
 \begin{figure}
-\centering
-\includegraphics{images/down-2.png}
-\caption{\label{fig:down-2}Ventana de descarga.}
+\includegraphics[width=61.11in]{images/down-2} \caption{Ventana de descarga.}\label{fig:down-2}
 \end{figure}
 
 \hypertarget{cargar}{%
@@ -381,33 +339,25 @@ La nueva versión de la app te permite cargar un archivo de presupuesto para aut
 \textbf{Paso 1 - } Para cargar un presupuesto, empeiza con una sesión nueva donde todos los campos estén vacíos. En el panel lateral izquierdo, haz click n el botón de ``Cargar'' \ref{fig:up-1}).
 
 \begin{figure}
-\centering
-\includegraphics{images/up-1.png}
-\caption{\label{fig:up-1}Empieza con una sesión nueva.}
+\includegraphics[width=61.11in]{images/up-1} \caption{Empieza con una sesión nueva.}\label{fig:up-1}
 \end{figure}
 
 \textbf{Paso 2 - } Selecciona el archivo de presupuesto que deseas cargar \ref{fig:up-2}). En este ejemplo, estoy seleccionando un presupuesto de FIP, que se enfoca en la fase de implementación de una evaluación del estado del recurso.
 
 \begin{figure}
-\centering
-\includegraphics{images/up-2.png}
-\caption{\label{fig:up-2}Asignar presupuesto a actores.}
+\includegraphics[width=61.11in]{images/up-2} \caption{Asignar presupuesto a actores.}\label{fig:up-2}
 \end{figure}
 
 \textbf{Paso 3 - } Confirma ue el archivo fue cargado en el panel lateral \ref{fig:up-3}).
 
 \begin{figure}
-\centering
-\includegraphics{images/up-3.png}
-\caption{\label{fig:up-3}Asignar presupuesto a actores.}
+\includegraphics[width=61.11in]{images/up-3} \caption{Asignar presupuesto a actores.}\label{fig:up-3}
 \end{figure}
 
 \textbf{Paso 4 - } Navega a la sección de FIP, fase de implementaión y selecciona las intervenciones correspondientes \ref{fig:up-4}). Los elementos se poblarán automáticamente con los valores que cargaste. Ahora puedes continuar editando tu progreso. Cuando hayas terminado o necesites un descanso, simplemente descarga la versión actualizada de tu presupuesto como lo vimos en el capítulo anterior.
 
 \begin{figure}
-\centering
-\includegraphics{images/up-4.png}
-\caption{\label{fig:up-4}Asignar presupuesto a actores.}
+\includegraphics[width=61.11in]{images/up-4} \caption{Asignar presupuesto a actores.}\label{fig:up-4}
 \end{figure}
 
   \bibliography{book.bib,packages.bib}

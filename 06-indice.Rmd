@@ -7,14 +7,26 @@ suppressPackageStartupMessages({
   library(tidyverse)
 })
 if(knitr:::is_html_output()){
-  readxl::read_xlsx(
-    "files/defaults_rema_fip.xlsx",
+  
+  rema <-  readxl::read_xlsx(
+    path = "files/defaults_rema_fip.xlsx",
     sheet = 1,
     na = c("", "N/A")
   ) %>%
     janitor::clean_names() %>%
     arrange(fase, subfase_orden, actividad_orden) %>%
-    select(section, fase, subfase, actividad, rubro, descripcion) %>% 
+    select(section, fase, subfase, actividad, rubro, descripcion)
+  
+  fip <-  readxl::read_xlsx(
+    path = "files/defaults_rema_fip.xlsx",
+    sheet = 2,
+    na = c("", "N/A")
+  ) %>%
+    janitor::clean_names() %>%
+    arrange(fase, subfase_orden, actividad_orden) %>%
+    select(section, fase, subfase, actividad, rubro, descripcion)
+  
+  rbind(rema, fip) %>% 
     DT::datatable(colnames = c("Sección", "Fase", "Subfase", "Actividad", "Elemento", "Descripción"),
                   rownames = F, )
 }
