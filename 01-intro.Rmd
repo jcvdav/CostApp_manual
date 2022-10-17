@@ -8,7 +8,7 @@ Esta aplicación ayuda a estimar los costos aproximados necesarios para llevar a
 
 La aplicación te permite generar un presupuesto jerárquico, definido de la siguiente manera:
 
-- **Secciones**: Hay dos, una para Reservas Marinas (REMA) y una para Proyctos de Mejoramiento Pesquero (FIPS).
+- **Secciones**: Hay dos, una para Reservas Marinas (REMA) y una para Proyectos de Mejoramiento Pesquero (FIPs).
 
 - **Fases**: Las intervenciones se dividen en tres fases: Diseño, Implementación y Seguimiento.
 
@@ -16,7 +16,7 @@ La aplicación te permite generar un presupuesto jerárquico, definido de la sig
 
 - **Actividad**: Cada subfase se compone de diferentes actividades. Por ejemplo, la subfase de Socialización para el Diseño de una reserva marina tiene únicamente una actividad: Reuniones para presentar información de ZRP. Por otro lado, la subfase de identificación y socialización en la fase de diseño de FIPs tiene cuatro actividades.
 
-- **Elemento**: Para llevar a cabo cada actividad, es necesar con ciertos elementos. Es aquí donde pudes combinar precios y cantidades para determinar los costos de la actividad.
+- **Elemento**: Para llevar a cabo cada actividad, es necesario contar con ciertos elementos. Es aquí donde pudes combinar precios y cantidades para determinar los costos de la actividad.
 
 Por lo tanto, las secciones se dividen en fases. Las fases se dividen en subfases. Las subfases se dividen en actividades. Y las actividades se dividen en elementos.
 
@@ -24,32 +24,37 @@ Por lo tanto, las secciones se dividen en fases. Las fases se dividen en subfase
 
 ### Barra lateral
 
-La interfaz de usuario está diseñada para reflejar las estructura del presupuesto. Al entrar a la aplicación, lo primero que verás es una pantalla (Fig. \@ref(fig:landing-page)). El lado izquierdo muestra el panel de control y navgación. El panel te permite navegar a través de las diferentes secciones de la aplicación. La sección predeterminada es la sección de "Inicio", donde se encuentra un pequeño resumen de la aplicación, así como enlances a este manual. También están disponibles las dos secciones que identifican el tipo de intervención ("Costeo de Reservas" y "Costeo de FIP"), y la sección para visualizar el presupuesto ("Gráficos"). Finalmente, observarás la zona de herramientas disponibles, como cargar un presupuesto anterior, descargar el presupuesto de la sesión, o compartir el estado de tu sesión con alguien más.
+La interfaz de usuario está diseñada para reflejar las estructura del presupuesto. Al entrar a la aplicación, lo primero que verás es una pantalla de bienvenida (Fig. \@ref(fig:landing-page)). El lado izquierdo muestra el panel de control y navegación. El panel te permite navegar a través de las diferentes secciones de la aplicación. La sección predeterminada es la sección de "Inicio", donde se encuentra un pequeño resumen de la aplicación, así como enlances a este manual. También están disponibles las dos secciones que identifican el tipo de intervención ("Costeo de Reservas" y "Costeo de FIP"), y la sección para visualizar el presupuesto ("Gráficos"). Finalmente, observarás la zona de herramientas disponibles, como comenzar un presupuesto, guardar el proyecto o descargar el presupuesto.
 
 ```{r landing-page, echo = FALSE, fig.cap = "Página de bienvenida en la aplicación web."}
-knitr::include_graphics("images/Screen Shot 2022-07-25 at 2.43.50 PM.png")
+knitr::include_graphics("images/Screen Shot 2022-09-26 at 2.03.58 PM.png")
 ```
 
 ### Área de trabajo
 
 Del lado derecho observarás el área de trabajo principal. Si estás trabajando en el llenado de un presupuesto, esta sección te mostrará los diferentes campos para que puedas ingresar los valores o explorar el presupuesto. Exploremos más a detalle cada una de estas.
 
-La figura \@ref(fig:filling-page) muestra el estado de la aplicación cuando el usuario ha seleccionado "Costeo de Reservas" en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de "Diseño", "Implementación", y "Seguimiento", stas son las tres fases descritas en sección \@ref(estructura). La pestaña "Implementación" está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada "Duración de la fase" en la que especificaremos la duración del a fase de diseño de las reservas marinas.
+La figura \@ref(fig:filling-page) muestra el estado de la aplicación cuando el usuario ha seleccionado "Costeo de Reservas" en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de "Diseño", "Implementación", y "Seguimiento". Estas son las tres fases descritas en la sección \@ref(estructura). La pestaña "Implementación" está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada "Duración de la fase" en la que especificaremos la duración (en peses) de la fase de diseño de las reservas marinas.
 
 ```{r filling-page, echo = FALSE, fig.cap = "Página de llenado de datos en la aplicación web."}
 knitr::include_graphics("images/jerarquia.png")
 ```
 
-La fase de diseño de reservas marinas se subdivide en cuatro subfases, indicadas por los bloques azules del lado izquierdo. En este caso, el diseño de una reserva marina requiere de Socialización, Definicion de Objetivos, Elaboración de un Estudio Técnico Justificativo, y "Otros" (otros costos que el usuario puede incluir). Como dijimos en la sección \@ref(estructura), las subfases se dividen en actividades. Por ejemplo, la subfase de socialización cuenta con una única actividad: "Reuniones para presentar información de ZRP". Al hacer "click" en el signo de **+** a la derecha del título de la actividad, la aplicación despliega la lista de elementos a costear (Fig. \@ref(fig:elements)), así como la frecuencia de la actividad. Aprenderemos más sobre el llenado de un presupuesto en el capítylo \@ref(llenado).
+La fase de diseño de reservas marinas se subdivide en cuatro subfases, indicadas por los bloques azules del lado izquierdo. En este caso, el diseño de una reserva marina requiere de Socialización, Definicion de Objetivos, Elaboración de un Estudio Técnico Justificativo, y "Otros" (otros costos que el usuario puede incluir). Como dijimos en la sección \@ref(estructura), las subfases se dividen en actividades. Por ejemplo, la subfase de socialización cuenta con una única actividad: "Reuniones para presentar información de ZRP". Al hacer "click" en el signo de **+** a la derecha del título de la actividad, la aplicación despliega la lista de elementos a costear (Fig. \@ref(fig:elements)), así como la frecuencia de la actividad. Aprenderemos más sobre el llenado de un presupuesto en el capítulo \@ref(llenado).
 
 ```{r elements, echo = FALSE, fig.cap = "Elementos para la actividad de 'Reuniones para presentar información de ZRP'."}
-knitr::include_graphics("images/Screen Shot 2022-07-25 at 3.08.10 PM.png")
+knitr::include_graphics("images/Screen Shot 2022-10-17 at 1.48.30 PM.png")
 ```
 
 La figura \@ref(fig:viewing-page) muestra el último área de trabajo, donde podrás visualizar el presupuesto. Además, contiene una nueva característica de esta versión de la aplicación: Te permite dividir el presupuesto entre diferentes actores, y anticipar el monto de sus contribuciones. Aprenderemos más a detalle sobre esta sección en el capítulo \@ref(explorar).
 
 ```{r viewing-page, echo = FALSE, fig.cap = "Página de exploración de presupuesto en la aplicación web."}
-knitr::include_graphics("images/Screen Shot 2022-07-25 at 2.56.18 PM.png")
+knitr::include_graphics("images/Screen Shot 2022-09-26 at 2.21.21 PM.png")
 ```
 
 
+## Notas importantes
+
+### Reactividad
+
+### Internet

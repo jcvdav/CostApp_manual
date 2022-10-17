@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Capítulo 3 Llenado de datos | Aplicación para el costeo de intervenciones de conservación marina</title>
+  <title>Capítulo 3 Llenado de datos | Aplicación para el costeo de intervenciones de conservación marina y pesca sostenible</title>
   <meta name="description" content="Este es un manual de usuario para la aplicación de costeo de intervenciones de conservación marina." />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Capítulo 3 Llenado de datos | Aplicación para el costeo de intervenciones de conservación marina" />
+  <meta property="og:title" content="Capítulo 3 Llenado de datos | Aplicación para el costeo de intervenciones de conservación marina y pesca sostenible" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Este es un manual de usuario para la aplicación de costeo de intervenciones de conservación marina." />
   <meta name="github-repo" content="jcvdav/CostApp_manual" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Capítulo 3 Llenado de datos | Aplicación para el costeo de intervenciones de conservación marina" />
+  <meta name="twitter:title" content="Capítulo 3 Llenado de datos | Aplicación para el costeo de intervenciones de conservación marina y pesca sostenible" />
   
   <meta name="twitter:description" content="Este es un manual de usuario para la aplicación de costeo de intervenciones de conservación marina." />
   
@@ -51,14 +51,6 @@
 <link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
 <link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
 <script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.24/datatables.js"></script>
-<link href="libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
-<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
 
 
 
@@ -93,11 +85,17 @@
 <li class="chapter" data-level="2.2.1" data-path="intro.html"><a href="intro.html#barra-lateral"><i class="fa fa-check"></i><b>2.2.1</b> Barra lateral</a></li>
 <li class="chapter" data-level="2.2.2" data-path="intro.html"><a href="intro.html#área-de-trabajo"><i class="fa fa-check"></i><b>2.2.2</b> Área de trabajo</a></li>
 </ul></li>
+<li class="chapter" data-level="2.3" data-path="intro.html"><a href="intro.html#notas-importantes"><i class="fa fa-check"></i><b>2.3</b> Notas importantes</a>
+<ul>
+<li class="chapter" data-level="2.3.1" data-path="intro.html"><a href="intro.html#reactividad"><i class="fa fa-check"></i><b>2.3.1</b> Reactividad</a></li>
+<li class="chapter" data-level="2.3.2" data-path="intro.html"><a href="intro.html#internet"><i class="fa fa-check"></i><b>2.3.2</b> Internet</a></li>
+</ul></li>
 </ul></li>
 <li class="chapter" data-level="3" data-path="llenado.html"><a href="llenado.html"><i class="fa fa-check"></i><b>3</b> Llenado de datos</a>
 <ul>
-<li class="chapter" data-level="3.1" data-path="llenado.html"><a href="llenado.html#rema"><i class="fa fa-check"></i><b>3.1</b> Ejemplo de REMA</a></li>
-<li class="chapter" data-level="3.2" data-path="llenado.html"><a href="llenado.html#fip"><i class="fa fa-check"></i><b>3.2</b> Ejemplo de FIP</a></li>
+<li class="chapter" data-level="3.1" data-path="llenado.html"><a href="llenado.html#paso-0---crear-un-proyecto"><i class="fa fa-check"></i><b>3.1</b> Paso 0 - Crear un proyecto</a></li>
+<li class="chapter" data-level="3.2" data-path="llenado.html"><a href="llenado.html#rema"><i class="fa fa-check"></i><b>3.2</b> Ejemplo de REMA</a></li>
+<li class="chapter" data-level="3.3" data-path="llenado.html"><a href="llenado.html#fip"><i class="fa fa-check"></i><b>3.3</b> Ejemplo de FIP</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="explorar.html"><a href="explorar.html"><i class="fa fa-check"></i><b>4</b> Explorar el presupuesto</a></li>
 <li class="chapter" data-level="5" data-path="guardar.html"><a href="guardar.html"><i class="fa fa-check"></i><b>5</b> Guardar el progreso de un presupuesto</a></li>
@@ -115,7 +113,7 @@
       <div class="body-inner">
         <div class="book-header" role="navigation">
           <h1>
-            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Aplicación para el costeo de intervenciones de conservación marina</a>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Aplicación para el costeo de intervenciones de conservación marina y pesca sostenible</a>
           </h1>
         </div>
 
@@ -125,105 +123,120 @@
             <section class="normal" id="section-">
 <div id="llenado" class="section level1 hasAnchor" number="3">
 <h1><span class="header-section-number">Capítulo 3</span> Llenado de datos<a href="llenado.html#llenado" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>En este capítulo exploramos la interfaz para el llenado de datos. Recuerda que el presupuesto sigue una regla de jerarquías descrita en la sección <a href="intro.html#estructura">2.1</a>. El primer ejercicio se enfocará en la fase de diseño de reservas marinas. El segundo ejemplo se enfocará en la fase de implementación de un FIP. En ambos casos, utiizaremos un recuadro rojos obre las capturas de pantall para resaltar el módulo en la que estamos trabajando.</p>
-<div id="rema" class="section level2 hasAnchor" number="3.1">
-<h2><span class="header-section-number">3.1</span> Ejemplo de REMA<a href="llenado.html#rema" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p><strong>Paso 1 - </strong> Selecciona la pestaña de “Costeo de Reservas” (Fig. <a href="llenado.html#fig:rem-dis-1">3.1</a>). Auomáticamente, la app te muestra la fase de diseño (primer pestaña del área de trabajo).</p>
-<div class="figure"><span style="display:block;" id="fig:rem-dis-1"></span>
-<img src="images/rema_dis_1.png" alt="Interfaz de usuario con la sección de Costeo de Reservas seleccionada" width="2200" />
+<p>En este capítulo exploramos la interfaz para el llenado de datos. Recuerda que el presupuesto sigue una regla de jerarquías descrita en la sección <a href="intro.html#estructura">2.1</a>. El primer ejercicio se enfocará en la fase de diseño de reservas marinas. El segundo ejemplo se enfocará en la fase de implementación de un FIP. En ambos casos, utilizaremos un recuadro rojo sobre las capturas de pantalla para resaltar el módulo en la que estamos trabajando.</p>
+<div id="paso-0---crear-un-proyecto" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> Paso 0 - Crear un proyecto<a href="llenado.html#paso-0---crear-un-proyecto" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Independientemente de si tu proyecto es sobre costeo de reservas o proyectos de mejora pesquera, el primer paso es generar un nuevo proyecto. Para hacer esto, haz click en el botón de “Crear proyecto” en la barra de herramientas (Fig <a href="llenado.html#fig:paso0">3.1</a>). Esto abrirá una ventana en la que podrás ingresar la información de tu proyecto. Por ejemplo, podrás ingresar el número de actores responsables del financiamiento del proyecto.</p>
+<div class="figure"><span style="display:block;" id="fig:paso0"></span>
+<img src="images/paso0.png" alt="Interfaz de usuario con la sección de Costeo de Reservas seleccionada" width="2214" />
 <p class="caption">
 Figura 3.1: Interfaz de usuario con la sección de Costeo de Reservas seleccionada
 </p>
 </div>
-<p><strong>Paso 2 - </strong> Actualiza la duración de la fase de diseño a 2 años en el recuadro azul sobre las cuatro subfases (Fig <a href="llenado.html#fig:rem-dis-2">3.2</a>).</p>
+</div>
+<div id="rema" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Ejemplo de REMA<a href="llenado.html#rema" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p><strong>Paso 1 - </strong> Selecciona la pestaña de “Costeo de Reservas” (Fig. <a href="llenado.html#fig:rem-dis-1">3.2</a>). Auomáticamente, la app te muestra la fase de diseño (primer pestaña del área de trabajo).</p>
+<div class="figure"><span style="display:block;" id="fig:rem-dis-1"></span>
+<img src="images/rema_dis_1.png" alt="Interfaz de usuario con la sección de Costeo de Reservas seleccionada" width="2200" />
+<p class="caption">
+Figura 3.2: Interfaz de usuario con la sección de Costeo de Reservas seleccionada
+</p>
+</div>
+<p><strong>Paso 2 - </strong> Actualiza la duración de la fase de diseño a 2 años en el recuadro azul sobre las cuatro subfases (Fig <a href="llenado.html#fig:rem-dis-2">3.3</a>).</p>
 <div class="figure"><span style="display:block;" id="fig:rem-dis-2"></span>
 <img src="images/rema_dis_2.png" alt="Modificación de la duración de fase." width="2200" />
 <p class="caption">
-Figura 3.2: Modificación de la duración de fase.
+Figura 3.3: Modificación de la duración de fase.
 </p>
 </div>
-<p><strong>Paso - 3 </strong> Para llenar la subfase de Socialización, haz click en el simbolo de <strong>+</strong> en la esquina superior derecha cada actividad. Esto te mostrará todos los elementos que corresponden a esta actividad (Fig <a href="llenado.html#fig:rem-dis-3">3.3</a>).</p>
+<p><strong>Paso - 3 </strong> Para llenar la subfase de Socialización, haz click en el simbolo de <strong>+</strong> en la esquina superior derecha de cada actividad. Esto te mostrará todos los elementos que corresponden a esta actividad (Fig <a href="llenado.html#fig:rem-dis-3">3.4</a>).</p>
 <div class="figure"><span style="display:block;" id="fig:rem-dis-3"></span>
 <img src="images/rema_dis_3.png" alt="Despliegue de una actividad." width="2200" />
 <p class="caption">
-Figura 3.3: Despliegue de una actividad.
+Figura 3.4: Despliegue de una actividad.
 </p>
 </div>
-<p><strong>Paso 4 - </strong> Selecciona la frecuencia de las reuniones. En este caso la frecuencia es semestral, pes habrá dos reuniones al año a lo largo de dos años de diseño (Fig <a href="llenado.html#fig:rem-dis-4">3.4</a>).</p>
+<p><strong>Paso 4 - </strong> Selecciona la frecuencia de las reuniones. En este caso la frecuencia es semestral, pues habrá dos reuniones al año a lo largo de dos años de diseño (Fig <a href="llenado.html#fig:rem-dis-4">3.5</a>). En el siguiente menú podrás asignar también a un responsable financiero de la actividad.</p>
 <div class="figure"><span style="display:block;" id="fig:rem-dis-4"></span>
 <img src="images/rema_dis_4.png" alt="Frecuencia de la actividad." width="2200" />
 <p class="caption">
-Figura 3.4: Frecuencia de la actividad.
+Figura 3.5: Frecuencia de la actividad.
 </p>
 </div>
-<p><strong>Paso 5 - </strong> Ingresa los costos y cantidades de cada elemento. En este ejemplo la reunión semestral requiere de <strong>una</strong> sala de juntas que <strong>cuesta $1,500</strong> (Fig <a href="#fig:rema-dis-5"><strong>??</strong></a>). En el panel izquierdo podrás ver las actualizaciones a costos en tiempo real. En este caso, el costo hasta el momento es de $6,000 pesos, pues 1 sala de juntas de 1,500 que se usa 2 veces al año durante 2 años = <span class="math inline">\(1500 \times 1 \times 2 \times 2 = 6,000\)</span>.</p>
+<p><strong>Paso 5 - </strong> Ingresa los costos y cantidades de cada elemento. En este ejemplo la reunión semestral requiere de <strong>una</strong> sala de juntas que <strong>cuesta $1,500</strong> (Fig <a href="llenado.html#fig:rem-dis-5">3.6</a>). En el panel izquierdo podrás ver las actualizaciones a costos en tiempo real. En este caso, el costo hasta el momento es de $6,000 pesos, pues 1 sala de juntas de 1,500 que se usa 2 veces al año durante 2 años = <span class="math inline">\(1500 \times 1 \times 2 \times 2 = 6,000\)</span>.</p>
 <div class="figure"><span style="display:block;" id="fig:rem-dis-5"></span>
-<img src="images/rema_dis_5.png" alt="Llenado de datos y actualización del presupuesto." width="2200" />
+<img src="images/rema_dis_5.png" alt="Llenado de datos y actualización del presupuesto." width="2202" />
 <p class="caption">
-Figura 3.5: Llenado de datos y actualización del presupuesto.
+Figura 3.6: Llenado de datos y actualización del presupuesto.
 </p>
 </div>
-<p><strong>Paso 6 - </strong> Continua llenando los datos de la actividad, incluyendo los costos y cantidades de todos los elementos relevantes (Fig <a href="llenado.html#fig:rem-dis-6">3.6</a>). En este caso, necesitaremos $200 en materiales de papelería y 2 moderadores que cobrarán $3,000 por reunión cada uno. También incluimos los insumos de coffee break, estimados en $500 por reunión.</p>
+<p><strong>Paso 6 - </strong> Continua llenando los datos de la actividad, incluyendo los costos y cantidades de todos los elementos relevantes (Fig <a href="llenado.html#fig:rem-dis-6">3.7</a>). En este caso, necesitaremos $200 en materiales de papelería y 2 moderadores que cobrarán $3,000 por reunión cada uno. También incluimos los insumos de coffee break, estimados en $500 por reunión.</p>
 <div class="figure"><span style="display:block;" id="fig:rem-dis-6"></span>
-<img src="images/rema_dis_6.png" alt="Termina de llenar la activiad" width="2200" />
+<img src="images/rema_dis_6.png" alt="Termina de llenar la actividad" width="2200" />
 <p class="caption">
-Figura 3.6: Termina de llenar la activiad
+Figura 3.7: Termina de llenar la actividad
 </p>
 </div>
-<p><strong>Paso 7 - </strong> Una vez hayas terminado con la actividad, ha click en el signo <strong>-</strong> para colapsar el formato de entrada y repite los pasos 3 - 6 para llenar las siguientes actividades (Fig <a href="#fig:rem-dis-7"><strong>??</strong></a>). Observa cómo la actividad de reuniones está colapsada, mientras que la actividad de reunión para definir objetivos ahora está disponible.</p>
-<p><img src="images/rema_dis_7.png" width="2200" /></p>
+<p><strong>Paso 7 - </strong> Una vez hayas terminado con la actividad, ha click en el signo <strong>-</strong> para colapsar el formato de entrada y repite los pasos 3 - 6 para llenar las siguientes actividades (Fig <a href="llenado.html#fig:rem-dis-7">3.8</a>). Observa cómo la actividad de reuniones está colapsada, mientras que la actividad de reunión para definir objetivos ahora está disponible. En esta otra actividad, el responsable financiero es la SCPP Langosteros de Xpuha.</p>
+<div class="figure"><span style="display:block;" id="fig:rem-dis-7"></span>
+<img src="images/rema_dis_7.png" alt="Llena la siguiente actividad." width="2200" />
+<p class="caption">
+Figura 3.8: Llena la siguiente actividad.
+</p>
+</div>
 <p>Esto concluye la breve introducción para el llenado de un presupuesto para REMA. En un ejercicio real, probablemente necesites iterar más entre fases, subfases y actividades. En cualquier momento puedes navegar a otras secciones, por ejemplo para explorar y visualizar el presupuesto, descrito a detalle en el capítulo <a href="explorar.html#explorar">4</a>.</p>
 </div>
-<div id="fip" class="section level2 hasAnchor" number="3.2">
-<h2><span class="header-section-number">3.2</span> Ejemplo de FIP<a href="llenado.html#fip" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<p>Supongamos que ya haz cubierto la fase de diseño para un FIP. El siguiente pso es la fase de implementación, donde se selecciona y plana el tipo de intervenciones.</p>
-<p><strong>Paso 1 - </strong> Selecciona la sección de “Costeo de FIP” en la barra lateral (Fig <a href="llenado.html#fig:fip-imp-1">3.7</a>).</p>
+<div id="fip" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> Ejemplo de FIP<a href="llenado.html#fip" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Supongamos que ya haz cubierto la fase de diseño para un FIP. El siguiente pso es la fase de implementación, donde se selecciona y planea el tipo de intervenciones.</p>
+<p><strong>Paso 1 - </strong> Selecciona la sección de “Costeo de FIP” en la barra lateral (Fig <a href="llenado.html#fig:fip-imp-1">3.9</a>).</p>
 <div class="figure"><span style="display:block;" id="fig:fip-imp-1"></span>
 <img src="images/fip-imp-1.png" alt="Selecciona la sección." width="2204" />
 <p class="caption">
-Figura 3.7: Selecciona la sección.
+Figura 3.9: Selecciona la sección.
 </p>
 </div>
-<p><strong>Paso 2 - </strong> En el área de trabajo de FIP, selecciona la pestaña de “Implementación” en la parte superior de la pantalla. (Fig <a href="llenado.html#fig:fip-imp-2">3.8</a>).</p>
+<p><strong>Paso 2 - </strong> En el área de trabajo de FIP, selecciona la pestaña de “Implementación” en la parte superior de la pantalla. (Fig <a href="llenado.html#fig:fip-imp-2">3.10</a>).</p>
 <div class="figure"><span style="display:block;" id="fig:fip-imp-2"></span>
 <img src="images/fip-imp-2.png" alt="Selecciona la fase" width="2200" />
 <p class="caption">
-Figura 3.8: Selecciona la fase
+Figura 3.10: Selecciona la fase
 </p>
 </div>
-<p><strong>Paso 2 - </strong> Ingresa la duración de la fase, en este caso de 2 años (Fig <a href="llenado.html#fig:fip-imp-3">3.9</a>).</p>
+<p><strong>Paso 2 - </strong> Ingresa la duración de la fase, en este caso de 2 años (Fig <a href="llenado.html#fig:fip-imp-3">3.11</a>).</p>
 <div class="figure"><span style="display:block;" id="fig:fip-imp-3"></span>
-<img src="images/fip-imp-3.png" alt="Selecciona la duración de la fase." width="2200" />
+<img src="images/fip-imp-3.png" alt="Selecciona la duración de la fase." width="2198" />
 <p class="caption">
-Figura 3.9: Selecciona la duración de la fase.
+Figura 3.11: Selecciona la duración de la fase.
 </p>
 </div>
-<p><strong>Paso 4 - </strong> Un FIP puede tener diferentes intervenciones. Usa el menú desplegable del lado derecho para seleccionar las intervenciones que corresponden a tu programa (Fig <a href="llenado.html#fig:fip-imp-4">3.10</a>).</p>
+<p><strong>Paso 4 - </strong> Un FIP puede tener diferentes intervenciones. Usa el menú desplegable del lado derecho para seleccionar las intervenciones que corresponden a tu programa (Fig <a href="llenado.html#fig:fip-imp-4">3.12</a>).</p>
 <div class="figure"><span style="display:block;" id="fig:fip-imp-4"></span>
-<img src="images/fip-imp-4.png" alt="Selecciona tus acciones." width="2200" />
+<img src="images/fip-imp-4.png" alt="Selecciona tus acciones." width="2198" />
 <p class="caption">
-Figura 3.10: Selecciona tus acciones.
+Figura 3.12: Selecciona tus acciones.
 </p>
 </div>
-<p><strong>Paso 5 - </strong> Al seleccionar las acciones de intervención, el área de trabajo automáticamente generará una subfase para cada una, con las actividades correspondientes (Fig <a href="llenado.html#fig:fip-imp-5">3.11</a>).</p>
+<p><strong>Paso 5 - </strong> Al seleccionar las acciones de intervención, el área de trabajo automáticamente generará una subfase para cada una, con las actividades correspondientes (Fig <a href="llenado.html#fig:fip-imp-5">3.13</a>).</p>
 <div class="figure"><span style="display:block;" id="fig:fip-imp-5"></span>
 <img src="images/fip-imp-5.png" alt="Generación de subfases y actividades." width="2200" />
 <p class="caption">
-Figura 3.11: Generación de subfases y actividades.
+Figura 3.13: Generación de subfases y actividades.
 </p>
 </div>
-<p><strong>Paso 6 - </strong> Al igual que en el caso de REMA, utiliza el botón de <strong>+</strong> para desplegar los elementos de la actividad y actualiza la frecuencia de la actividad (Fig <a href="llenado.html#fig:fip-imp-6">3.12</a>). En este caso es un evento único, por lo que no importa la duración de la fase, este evento no se repetirá en el tiempo.</p>
+<p><strong>Paso 6 - </strong> Al igual que en el caso de REMA, utiliza el botón de <strong>+</strong> para desplegar los elementos de la actividad y actualiza la frecuencia de la actividad (Fig <a href="llenado.html#fig:fip-imp-6">3.14</a>). En este caso es un evento único, por lo que no importa la duración de la fase, este evento no se repetirá en el tiempo.</p>
 <div class="figure"><span style="display:block;" id="fig:fip-imp-6"></span>
 <img src="images/fip-imp-6.png" alt="Selecciona la frecuencia." width="2200" />
 <p class="caption">
-Figura 3.12: Selecciona la frecuencia.
+Figura 3.14: Selecciona la frecuencia.
 </p>
 </div>
-<p><strong>Paso 7 - </strong> Llena los costos y cantidades de cada uno de los elementos de la actividad y observa cómo el panel izquierdo se actualiza para reflejar el costo total (Fig <a href="llenado.html#fig:fip-imp-7">3.13</a>).</p>
+<p><strong>Paso 7 - </strong> Llena los costos y cantidades de cada uno de los elementos de la actividad y observa cómo el panel izquierdo se actualiza para reflejar el costo total (Fig <a href="llenado.html#fig:fip-imp-7">3.15</a>).</p>
 <div class="figure"><span style="display:block;" id="fig:fip-imp-7"></span>
 <img src="images/fip-imp-7.png" alt="Llenado de datos." width="2204" />
 <p class="caption">
-Figura 3.13: Llenado de datos.
+Figura 3.15: Llenado de datos.
 </p>
 </div>
 

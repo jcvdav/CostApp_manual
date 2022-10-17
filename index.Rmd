@@ -1,8 +1,8 @@
 --- 
-title: "Aplicación para el costeo de intervenciones de conservación marina"
+title: "Aplicación para el costeo de intervenciones de conservación marina y pesca sostenible"
 subtitle: "Manual de usuario"
 author: "Juan Carlos Villaseñor-Derbez"
-date: "Última actualzación: Julio 25, 2022"
+date: "Última actualzación: Septiembre 26, 2022"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
@@ -17,12 +17,12 @@ description: "Este es un manual de usuario para la aplicación de costeo de inte
 
 ## Sobre la aplicación
 
-La aplicación de costeo de intervenciones de conservación marina te permite diseñar y costear una intervención. La intervención puede ser en forma de reservas marinas o proyectos de mejoramiento pesquero. La aplicación está disponible en [este link](https://innovacionazul.shinyapps.io/AppCosteo/).
+La aplicación para el costeo de intervenciones de conservación marina y pesca sostenible te permite diseñar y costear tus intervenciones. Estas pueden ser en forma de reservas marinas o proyectos de mejoramiento pesquero. La aplicación está disponible en [este link](https://innovacionazul.shinyapps.io/AppCosteo/).
 
 ## Sobre el manual
 
-El manual está disponible en tres formatos: página web, documento de PDF, o E-pub para kindle o similares. En la ágina web, la barra lateral te permite navegar entre capítulos y secciones. El capítulo \@ref(intro) presenta una breve descripción de la jararquia de un presupusto y la interfaz de usuario. El capítulo \@ref(llenado) muestra dos ejemplos de llenado de datos par aun presupuesto de REMA y un presupuesto de FIP. El capítulo \@ref(explorar) describe el área de exploración y visualización de datos, así como la opción de dividir el presupuesto entre diferentes actores. El capítulo \@ref(guardar) te muestra como guardar tu progreso, mientras que el capítulo \@ref(cargar) te muestra como continuar un presupuesto anterior. Finalmente, el capítulo \@ref(compartir) te muestra cómo compartir un presupuesto.
+El manual está disponible en tres formatos: página web, documento de PDF, o E-pub para kindle o similares. En la página web, la barra lateral te permite navegar entre capítulos y secciones. El capítulo \@ref(intro) presenta una breve descripción de la jerarquía de un presupusto y la interfaz de usuario. El capítulo \@ref(llenado) muestra dos ejemplos de llenado de datos, uno para un presupuesto de reservas marinas (REMA) y un presupuesto de proyecto de mejoramieto pesquero (FIP, por sus siglas en inglés). El capítulo \@ref(explorar) describe el área de exploración y visualización de datos, y de descarga de datos. El capítulo \@ref(guardar) te muestra como guardar tu progreso, mientras que el capítulo \@ref(cargar) te muestra como continuar un presupuesto anterior. Finalmente, el capítulo \@ref(indice) te muestra el índice de todos los elementos que se pueden costear.
 
 ## Contacto a desarrolladores
 
-Para cualquier pregunta o comentario sobre este producto escribe al correo [rema@cobi.org.mx](mailto:rema@cobi.org.mx). Tus observaciones nos ayudarán a mejorar nuestras herramientas.
+Para cualquier pregunta o comentario sobre este producto escribe al correo [cobi@cobi.org.mx](mailto:cobi@cobi.org.mx). Tus observaciones nos ayudarán a mejorar nuestras herramientas.

@@ -1,6 +1,16 @@
 # Llenado de datos {#llenado}
 
-En este capítulo exploramos la interfaz para el llenado de datos. Recuerda que el presupuesto sigue una regla de jerarquías descrita en la sección \@ref(estructura). El primer ejercicio se enfocará en la fase de diseño de reservas marinas. El segundo ejemplo se enfocará en la fase de implementación de un FIP. En ambos casos, utiizaremos un recuadro rojos obre las capturas de pantall para resaltar el módulo en la que estamos trabajando.
+En este capítulo exploramos la interfaz para el llenado de datos. Recuerda que el presupuesto sigue una regla de jerarquías descrita en la sección \@ref(estructura). El primer ejercicio se enfocará en la fase de diseño de reservas marinas. El segundo ejemplo se enfocará en la fase de implementación de un FIP. En ambos casos, utilizaremos un recuadro rojo sobre las capturas de pantalla para resaltar el módulo en la que estamos trabajando.
+
+## Paso 0 - Crear un proyecto
+
+Independientemente de si tu proyecto es sobre costeo de reservas o proyectos de mejora pesquera, el primer paso es generar un nuevo proyecto. Para hacer esto, haz click en el botón de "Crear proyecto" en la barra de herramientas (Fig \@ref(fig:paso0)). Esto abrirá una ventana en la que podrás ingresar la información de tu proyecto. Por ejemplo, podrás ingresar el número de actores responsables del financiamiento del proyecto.
+
+
+```{r paso0, echo = F, fig.cap = "Interfaz de usuario con la sección de Costeo de Reservas seleccionada"}
+knitr::include_graphics("images/paso0.png")
+```
+
 
 ## Ejemplo de REMA {#rema}
 
@@ -16,19 +26,19 @@ knitr::include_graphics("images/rema_dis_1.png")
 knitr::include_graphics("images/rema_dis_2.png")
 ```
 
-**Paso - 3 ** Para llenar la subfase de Socialización, haz click en el simbolo de **+** en la esquina superior derecha cada actividad. Esto te mostrará todos los elementos que corresponden a esta actividad (Fig \@ref(fig:rem-dis-3)).
+**Paso - 3 ** Para llenar la subfase de Socialización, haz click en el simbolo de **+** en la esquina superior derecha de cada actividad. Esto te mostrará todos los elementos que corresponden a esta actividad (Fig \@ref(fig:rem-dis-3)).
 
 ```{r rem-dis-3, echo = F, fig.cap = "Despliegue de una actividad."}
 knitr::include_graphics("images/rema_dis_3.png")
 ```
 
-**Paso 4 - ** Selecciona la frecuencia de las reuniones. En este caso la frecuencia es semestral, pes habrá dos reuniones al año a lo largo de dos años de diseño (Fig \@ref(fig:rem-dis-4)).
+**Paso 4 - ** Selecciona la frecuencia de las reuniones. En este caso la frecuencia es semestral, pues habrá dos reuniones al año a lo largo de dos años de diseño (Fig \@ref(fig:rem-dis-4)). En el siguiente menú podrás asignar también a un responsable financiero de la actividad.
 
 ```{r rem-dis-4, echo = F, fig.cap = "Frecuencia de la actividad."}
 knitr::include_graphics("images/rema_dis_4.png")
 ```
 
-**Paso 5 - ** Ingresa los costos y cantidades de cada elemento. En este ejemplo la reunión semestral requiere de **una** sala de juntas que **cuesta \$1,500** (Fig \@ref(fig:rema-dis-5)). En el panel izquierdo podrás ver las actualizaciones a costos en tiempo real. En este caso, el costo hasta el momento es de \$6,000 pesos, pues 1 sala de juntas de 1,500 que se usa 2 veces al año durante 2 años = $1500 \times 1 \times 2 \times 2 = 6,000$.
+**Paso 5 - ** Ingresa los costos y cantidades de cada elemento. En este ejemplo la reunión semestral requiere de **una** sala de juntas que **cuesta \$1,500** (Fig \@ref(fig:rem-dis-5)). En el panel izquierdo podrás ver las actualizaciones a costos en tiempo real. En este caso, el costo hasta el momento es de \$6,000 pesos, pues 1 sala de juntas de 1,500 que se usa 2 veces al año durante 2 años = $1500 \times 1 \times 2 \times 2 = 6,000$.
 
 ```{r rem-dis-5, echo = F, fig.cap = "Llenado de datos y actualización del presupuesto."}
 knitr::include_graphics("images/rema_dis_5.png")
@@ -36,12 +46,13 @@ knitr::include_graphics("images/rema_dis_5.png")
 
 **Paso 6 - ** Continua llenando los datos de la actividad, incluyendo los costos y cantidades de todos los elementos relevantes (Fig \@ref(fig:rem-dis-6)). En este caso, necesitaremos \$200 en materiales de papelería y 2 moderadores que cobrarán \$3,000 por reunión cada uno. También incluimos los insumos de coffee break, estimados en \$500 por reunión.
 
-```{r rem-dis-6, echo = F, fig.cap = "Termina de llenar la activiad"}
+```{r rem-dis-6, echo = F, fig.cap = "Termina de llenar la actividad"}
 knitr::include_graphics("images/rema_dis_6.png")
 ```
-**Paso 7 - ** Una vez hayas terminado con la actividad, ha click en el signo **-** para colapsar el formato de entrada y repite los pasos 3 - 6 para llenar las siguientes actividades (Fig \@ref(fig:rem-dis-7)). Observa cómo la actividad de reuniones está colapsada, mientras que la actividad de reunión para definir objetivos ahora está disponible.
 
-```{r rem-dis-7, echo = F, fig.cap = ""}
+**Paso 7 - ** Una vez hayas terminado con la actividad, ha click en el signo **-** para colapsar el formato de entrada y repite los pasos 3 - 6 para llenar las siguientes actividades (Fig \@ref(fig:rem-dis-7)). Observa cómo la actividad de reuniones está colapsada, mientras que la actividad de reunión para definir objetivos ahora está disponible. En esta otra actividad, el responsable financiero es la SCPP Langosteros de Xpuha.
+
+```{r rem-dis-7, echo = F, fig.cap = "Llena la siguiente actividad."}
 knitr::include_graphics("images/rema_dis_7.png")
 ```
 
@@ -50,7 +61,7 @@ Esto concluye la breve introducción para el llenado de un presupuesto para REMA
 
 ## Ejemplo de FIP {#fip}
 
-Supongamos que ya haz cubierto la fase de diseño para un FIP. El siguiente pso es la fase de implementación, donde se selecciona y plana el tipo de intervenciones.
+Supongamos que ya haz cubierto la fase de diseño para un FIP. El siguiente pso es la fase de implementación, donde se selecciona y planea el tipo de intervenciones.
 
 **Paso 1 - ** Selecciona la sección de "Costeo de FIP" en la barra lateral (Fig \@ref(fig:fip-imp-1)).
 

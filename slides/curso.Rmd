@@ -1,0 +1,244 @@
+---
+title: "Sistema de Costeo para Herramientas de Reservas Marinas y Proyectos de Mejora Pesquera"
+subtitle: "Curso y retroalimentación"
+author: "Villaseñor-Derbez, J.C."
+institute: ""
+date: "Sept 26, 2022"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      ratio: '16:9'
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    css: xaringan-themer.css
+---
+
+```{r, echo = F, include = F, warnings = F}
+knitr::opts_chunk$set(echo = F,
+                      warnings = F,
+                      message = F)
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Roboto", "400", "300i", "300b"),
+  code_font_google   = google_font("Fira Mono"),
+  header_h1_font_size = "2.2rem",
+  header_h2_font_size = "2rem",
+  text_font_size = "1.1rem",
+  link_color = "#808080",
+  header_background_auto = T,
+  footnote_font_size = "0.75rem"
+)
+```
+
+# Hoy
+
+**Introducción** a la App
+
+--
+
+**Ejemplo:** diseño de una intervención
+
+--
+
+**Ejercicio:** Costea tu intervención
+
+--
+
+**Retroalimentación:** ¿Qué se le puede mejorar a la app?
+
+---
+class: inverse, center, middle
+
+# Introducción a la App
+
+- ¿Qué es?
+
+--
+
+- ¿Qué hace?
+
+--
+
+- ¿Cómo se usa?
+
+---
+# Intoducción a la app
+## ¿Qué es?
+
+- Aplicación web (requiere conección a internet)
+
+--
+
+- Permite **documentar y monitorear** los costos de **diseño, implementación y seguimiento** de proyectos de:
+
+--
+
+    - Reservas Marinas
+    
+--
+    
+    - Proyectos de Mejora Pesquera
+
+--
+
+- Mejor **planeación** de las contribuciones de los grupos participantes
+
+---
+# Intoducción a la app
+## ¿Qué hace?
+
+- Le presenta al usuario una lista de elementos a costear, según el tipo de proyecto
+
+--
+
+- Captura la información del usuario
+
+--
+
+- Genera un resumen presupuestal
+
+--
+
+- Genera visualización de diferentes elementos, etapas, y fases de proyectos
+
+
+---
+# Intoducción a la app
+## ¿Cómo se usa?
+
+--
+
+1. Definir el tipo de **proyecto** (Reservas o FIP)
+
+--
+
+2. Proyecto se divide en **fases**
+
+--
+
+3. Fases se dividen en **sub-fases**
+
+--
+
+4. Sub-fases se dividen en **actividades**
+
+--
+
+5. Cada acividad tiene uno o más **elementos**
+
+---
+class: inverse, center, middle
+# Ejemplo
+
+---
+# Ejemplo
+
+--
+
+¿Cuál es el título del proyecto?
+  
+--
+
+  - Reservas marinas en Xpuha
+
+--
+
+¿Quiénes van a contribuir al financiamiento?
+
+--
+
+  - Alianza Arrecifal
+
+  - S.C.P.P. Langosteros y caracoleros de Xpuha
+
+--
+
+¿Qué tipo de proyecto es?
+
+--
+
+- Costeo de reservas
+
+--
+
+¿Cuántas y cuales fases quieres costear? [Diseño, Implementación, Seguimiento]
+
+--
+
+- Diseño
+
+- Implementación
+
+
+---
+class: inverse, center, middle
+# Ejercicio
+
+---
+# Ejercicio
+## Piensa en un proyecto que quieras costear (5-10 minutos)
+
+--
+
+- En tu mente, computadora, o una hoja de papel, responde las siguientes preguntas:
+
+--
+
+  - ¿Cuál es el título del proyecto?
+
+--
+
+  - ¿Quiénes van a contribuir al financiamiento?
+
+--
+
+  - ¿Qué tipo de proyecto es?
+
+--
+
+  - ¿Cuántas y cuales fases quieres costear? [Diseño, Implementación, Seguimiento]
+
+--
+
+  - **¿Cuánto crees que va a costar?**
+
+
+---
+# Ejercicio
+## Ve a la aplicación, y elabora tu presupuesto (20 minutos)
+
+- Enlace: [**innovacionazul.shinyapps.io/AppCosteo/**](https://innovacionazul.shinyapps.io/AppCosteo/)
+
+## Pasos:
+
+1. Haz click en "Crear proyecto"
+
+2. Llena la información necesaria para un nuevo proyecto
+
+3. Ve a la pestaña de "Costeo de Reservas" o "Costeo de FIP"
+
+4. Comienza a llenar los campos de tu proyecto
+
+---
+class: inverse, center, middle
+# Retroalimentación
+
+---
+# Retroalimentación
+.center[
+## ¿Qué le quitarías?
+
+<br></br>
+
+## ¿Qué le agregarías?
+
+<br></br>
+
+## ¿Qué le cambiarías?
+
+]
