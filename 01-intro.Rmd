@@ -34,7 +34,7 @@ knitr::include_graphics("images/Screen Shot 2022-09-26 at 2.03.58 PM.png")
 
 Del lado derecho observarás el área de trabajo principal. Si estás trabajando en el llenado de un presupuesto, esta sección te mostrará los diferentes campos para que puedas ingresar los valores o explorar el presupuesto. Exploremos más a detalle cada una de estas.
 
-La figura \@ref(fig:filling-page) muestra el estado de la aplicación cuando el usuario ha seleccionado "Costeo de Reservas" en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de "Diseño", "Implementación", y "Seguimiento". Estas son las tres fases descritas en la sección \@ref(estructura). La pestaña "Implementación" está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada "Duración de la fase" en la que especificaremos la duración (en peses) de la fase de diseño de las reservas marinas.
+La figura \@ref(fig:filling-page) muestra el estado de la aplicación cuando el usuario ha seleccionado "Costeo de Reservas" en el menú lateral. En la zona superior del área de trabajo principal podrás observar tres pestañas con los nombres de "Diseño", "Implementación", y "Seguimiento". Estas son las tres fases descritas en la sección \@ref(estructura). La pestaña "Implementación" está seleccionada, indicado por la barra azul sobre su nombre. En este punto, la aplicación te muestra una ventana titulada "Duración de la fase" en la que especificaremos la duración (en meses) de la fase de diseño de las reservas marinas.
 
 ```{r filling-page, echo = FALSE, fig.cap = "Página de llenado de datos en la aplicación web."}
 knitr::include_graphics("images/jerarquia.png")
@@ -52,9 +52,3 @@ La figura \@ref(fig:viewing-page) muestra el último área de trabajo, donde pod
 knitr::include_graphics("images/Screen Shot 2022-09-26 at 2.21.21 PM.png")
 ```
 
-
-## Notas importantes
-
-### Reactividad
-
-### Internet
